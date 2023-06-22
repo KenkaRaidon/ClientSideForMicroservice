@@ -17,23 +17,3 @@ body{
     color: #F9F9F9;
     margin-left: 2rem;
 }
-
-.content{
-    margin-top: 2rem;
-}
-
-#tableCard{
-    margin-left: 10rem;
-    margin-right: 10rem;
-    align-items: center;
-}
-
-.btn-primary{
-    background-color: #FFB3B3;
-    border-color: #FFB3B3;
-}
-
-.btn-primary:hover{
-    background-color: #AC7088;
-    border-color: #AC7088;
-}

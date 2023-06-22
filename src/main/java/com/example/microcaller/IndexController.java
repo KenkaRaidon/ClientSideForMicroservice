@@ -5,8 +5,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class IndexController {
-    @RequestMapping("/")
-    public String welcome(){
-        return "index";
+    @RequestMapping("/customer")
+    public String customer(){
+        return "customer";
+    }
+
+    @RequestMapping("/films")
+    public String films(){
+        return "films";
     }
 }
