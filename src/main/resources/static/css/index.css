@@ -1,14 +1,36 @@
+body{
+    background-color: #F9F9F9;
+}
+
 .header{
-    background-color: cornflowerblue;
+    background-color: #FD8A8A;
+}
+
+.header p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+    font-size: xx-large;
+    color: #F9F9F9;
+    margin-left: 2rem;
 }
 
 .content{
-    
+    margin-top: 2rem;
 }
 
 #tableCard{
-    margin-top: 1rem;
     margin-left: 3rem;
     margin-right: 3rem;
     align-items: center;
+}
+
+.btn-primary{
+    background-color: #FFB3B3;
+    border-color: #FFB3B3;
+}
+
+.btn-primary:hover{
+    background-color: #AC7088;
+    border-color: #AC7088;
 }
