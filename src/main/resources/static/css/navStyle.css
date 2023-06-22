@@ -1,0 +1,17 @@
+nav ul li{
+    display:inline;
+}
+
+nav a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: #F9F9F9;
+    margin-right: 1rem;
+    text-decoration: none;
+    
+}
+
+li, a:hover{
+   
+    color: #F9F9F9;
+}

@@ -74,7 +74,9 @@ $(document).ready(function () {
   });
 
   $("#customerCountry").on("change", function () {
-    $("#customerCountry option:selected").val()==""?$('#customerCity').prop('disabled', true):$('#customerCity').prop('disabled', false);
+    $("#customerCountry option:selected").val() == ""
+      ? $("#customerCity").val("")
+      : $("#customerCity").prop("disabled", false);
     $.ajax({
       async: false,
       url: "/getCityByCountryId/" + this.value,
@@ -151,11 +153,7 @@ $(document).ready(function () {
     .button()
     .click(function () {
       $("#registerClientForm").trigger("reset");
-      $('#customerCity').prop('disabled', true);
       $("#customerCity").get(0).options.length = 0;
-      $("#customerCity").get(0).options[0] = new Option(
-        "--Select City--",
-        ""
-      );
+      $("#customerCity").get(0).options[0] = new Option("--Select City--", "");
     });
 });

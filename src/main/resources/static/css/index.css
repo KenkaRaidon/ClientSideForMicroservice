@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 body{
     background-color: #F9F9F9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header{
     background-color: #FD8A8A;
 }
 
-.header p{
+.logo{
     margin: 0;
     padding: 0;
-    font-family: 'Lato';
     font-size: xx-large;
+    font-weight: bold;
     color: #F9F9F9;
     margin-left: 2rem;
 }
@@ -20,8 +23,8 @@ body{
 }
 
 #tableCard{
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     align-items: center;
 }
 

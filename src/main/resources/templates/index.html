@@ -11,7 +11,18 @@
 
 <body>
     <section class="header">
-        <p>Customers</p>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <p class="logo">Sakila</p>
+              </div>
+              <ul class="nav">
+                <li class="active"><a href="#">Customer</a></li>
+                <li><a href="#">Films</a></li>
+                <li><a href="#">Rental</a></li>
+              </ul>
+            </div>
+          </nav>
     </section>
     <section class="content">
         <div id="tableCard">
@@ -34,41 +45,41 @@
             <div class="modal-content">
                 <form id="registerClientForm" action="">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                        <h5 class="modal-title" id="exampleModalLabel">Register Customer</h5>
+                        <button type="button" class="btn-close btn-close-white" data-dismiss="modal" aria-label="Close">
                         </button>
                     </div>
                     <div class="modal-body">
                         <div class="form-row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-txt" for="customerName">Nombre</label>
+                                    <label class="form-txt" for="customerName">First Name</label>
                                     <input class="form-control" id="customerName" type="text" required>
                                 </div>
                             </div>
 
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-txt" for="customerLastName">Apellido</label>
+                                    <label class="form-txt" for="customerLastName">Last Name</label>
                                     <input class="form-control" id="customerLastName" type="text" required>
                                 </div>
                             </div>
 
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-txt" for="customerEmail">Correo</label>
+                                    <label class="form-txt" for="customerEmail">Email</label>
                                     <input class="form-control" id="customerEmail" type="text" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-txt" for="customerPhone">Telefono</label>
+                                    <label class="form-txt" for="customerPhone">Phone Number</label>
                                     <input class="form-control" id="customerPhone" type="text" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-txt" for="customerCountry">Pais</label>
+                                    <label class="form-txt" for="customerCountry">Country</label>
                                     <select class="form-control" id="customerCountry" type="text" required>
                                         <option>
                                         </option>
@@ -77,7 +88,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-txt" for="customerCity">Ciudad</label>
+                                    <label class="form-txt" for="customerCity">City</label>
                                     <select class="form-control" id="customerCity" type="text" required>
                                         <option>
                                         </option>
@@ -86,20 +97,19 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-txt" for="customerAddress">Direccion</label>
+                                    <label class="form-txt" for="customerAddress">Address</label>
                                     <input class="form-control" id="customerAddress" type="text" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-txt" for="customerPostalCode">Codigo
-                                        Postal</label>
+                                    <label class="form-txt" for="customerPostalCode">Postal Code</label>
                                     <input class="form-control" id="customerPostalCode" type="text" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="form-txt" for="customerStore">Sucursal</label>
+                                    <label class="form-txt" for="customerStore">Store</label>
                                     <select class="form-control" id="customerStore" type="text" required>
                                         <option></option>
                                     </select>
