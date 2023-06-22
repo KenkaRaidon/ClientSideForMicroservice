@@ -17,10 +17,9 @@
         <div id="tableCard">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" id="btnOpenModalRegisterCustomer" data-toggle="modal"
-                data-target="#registerCustomerModal">
+                data-target="#registerCustomerModal" data-backdrop="static" data-keyboard="false">
                 Register Customer
             </button>
-            <button id="btnSubmmit">Click here</button>
             <table id="example">
             </table>
         </div>
@@ -31,84 +30,87 @@
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-txt" for="customerName">Nombre</label>
-                                <input class="form-control" id="customerName" type="text" required>
+                <form id="registerClientForm" action="">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-txt" for="customerName">Nombre</label>
+                                    <input class="form-control" id="customerName" type="text" required>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-txt" for="customerLastName">Apellido</label>
-                                <input class="form-control" id="customerLastName" type="text" required>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-txt" for="customerLastName">Apellido</label>
+                                    <input class="form-control" id="customerLastName" type="text" required>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-txt" for="customerEmail">Correo</label>
-                                <input class="form-control" id="customerEmail" type="text" required>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-txt" for="customerEmail">Correo</label>
+                                    <input class="form-control" id="customerEmail" type="text" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-txt" for="customerPhone">Telefono</label>
-                                <input class="form-control" id="customerPhone" type="text" required>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-txt" for="customerPhone">Telefono</label>
+                                    <input class="form-control" id="customerPhone" type="text" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-txt" for="customerCountry">Pais</label>
-                                <select class="form-control" id="customerCountry" type="text" required>
-                                    <option>
-                                    </option>
-                                </select>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-txt" for="customerCountry">Pais</label>
+                                    <select class="form-control" id="customerCountry" type="text" required>
+                                        <option>
+                                        </option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-txt" for="customerCity">Ciudad</label>
-                                <select class="form-control" id="customerCity" type="text" required>
-                                    <option>
-                                    </option>
-                                </select>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-txt" for="customerCity">Ciudad</label>
+                                    <select class="form-control" id="customerCity" type="text" required>
+                                        <option>
+                                        </option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-txt" for="customerAddress">Direccion</label>
-                                <input class="form-control" id="customerAddress" type="text" required>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-txt" for="customerAddress">Direccion</label>
+                                    <input class="form-control" id="customerAddress" type="text" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-txt" for="customerPostalCode">Codigo
-                                    Postal</label>
-                                <input class="form-control" id="customerPostalCode" type="text" required>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-txt" for="customerPostalCode">Codigo
+                                        Postal</label>
+                                    <input class="form-control" id="customerPostalCode" type="text" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-txt" for="customerStore">Sucursal</label>
-                                <input class="form-control" id="customerStore" type="text" required>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-txt" for="customerStore">Sucursal</label>
+                                    <select class="form-control" id="customerStore" type="text" required>
+                                        <option></option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button id="btnSubmmit" type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button id="btnSubmmit" type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
